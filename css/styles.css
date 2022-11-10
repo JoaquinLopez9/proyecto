@@ -11,8 +11,9 @@ img{
     "footer footer footer";
 
     grid-template-columns: repeat(3, 1fr);
-    background-color: rgb(204, 251, 251);
+    background-image: linear-gradient(rgb(94, 255, 255), white, rgb(94, 255, 255));
 }
+/*rgb(204, 251, 251)*/
 
 /*header*/
 #header-index{
@@ -70,21 +71,20 @@ padding-bottom: rem;
 margin: 1.3rem;
 }
 
+.linknav:hover{
+    color: white;
+}
+
 /*main o contenido*/
 #main-index{
     grid-area: main;
 }
 
-@media screen and (max-width:1105){
+@media screen and (max-width: 1105px){
     #main-index{
         flex-direction: column;
     }
 }
-
-/*#main-index h2,
-#main-index div {
-    text-align: center;
-}*/
 
 .subheader{
     background-color: rgb(129, 222, 235);
@@ -120,6 +120,11 @@ margin: 1.3rem;
     font-weight: bold;
 }
 
+@media screen and (max-width: 600px){
+.ultimo-partido{
+    width: 26rem;
+    }
+}
 /*footer*/
 #footer-index{
     grid-area: footer;
@@ -170,7 +175,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    row-gap: 10px;
 }
 
 
